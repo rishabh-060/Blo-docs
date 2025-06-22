@@ -14,7 +14,7 @@ const PostCard = ({ $id, title, content, featuredImage }) => {
       <div className="bg-fuchsia-950 border border-fuchsia-800 rounded-xl shadow-lg overflow-hidden text-white hover:shadow-fuchsia-700/40 transition-all duration-300">
         
         {/* Image section */}
-        <div className="aspect-[16/9] overflow-hidden bg-fuchsia-900/30">
+        <div className="aspect-[16/10] overflow-hidden bg-fuchsia-900/30">
           <img
             src={appwriteService.getFileDownload(featuredImage)}
             alt={title}
@@ -28,7 +28,7 @@ const PostCard = ({ $id, title, content, featuredImage }) => {
           <h2 className="text-xl font-bold text-white line-clamp-1 group-hover:text-fuchsia-200 transition-colors">
             {title}
           </h2>
-          <div className="text-sm text-white/80 line-clamp-4">
+          <div className="text-sm text-white/80 line-clamp-3">
             {parse(content)}
           </div>
 

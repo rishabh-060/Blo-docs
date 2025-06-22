@@ -17,8 +17,8 @@ const Home = () => {
     return (
       <div className="w-full py-10">
         <Container>
-          <div className="grid grid-cols-2 px-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
-            {[...Array(8)].map((_, idx) => (
+          <div className="grid grid-cols-2 px-4 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-5 gap-2 md:gap-4">
+            {[...Array(10)].map((_, idx) => (
               <SkeletonCard key={idx} />
             ))}
           </div>
@@ -42,7 +42,7 @@ const Home = () => {
   return (
     <div className="w-full py-10">
       <Container>
-        <div className="grid grid-cols-2 px-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 px-4 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-5 gap-2 md:gap-4">
           {posts.map((post) => (
             <PostCard key={post.$id} {...post} />
           ))}
