@@ -1,10 +1,8 @@
-# 📝 Blo-Docs — A Modern Blogging Platform
+<p align="center">
+  <img src="./public/logoIco.png" alt="Blo-Docs Logo" height="100"/>
+</p>
 
-<h1 align="center" style="display: flex; align-items: center;">
-  <img src="./public/logoIco.png" alt="Blo-Docs Logo" height="60" />
-  <br/>
-  <span style="font-size: 1.8rem; font-weight: semibold; color: #c084fc;">Blo-Docs</span>
-</h1>
+<h1 align="center">Blo-Docs — A Modern Blogging Platform</h1>
 
  **Blo-Docs** is a sleek and modern **blog web application** built with React, powered by **Appwrite** as the backend-as-a-service (BaaS). It allows users to sign up, write rich blog posts, manage their content, and explore posts written by others — even without logging in.
 
