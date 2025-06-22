@@ -20,8 +20,10 @@ const EditPosts = () => {
   }, [slug, navigate])
 
   return posts ? (
-    <div>
-        <PostForm post={posts}/>
+    <div className='py-8'>
+        <Container>
+          <PostForm post={posts}/>
+        </Container>
     </div>
   ) : <Loader text={'loading post data...'}/>
 }

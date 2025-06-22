@@ -29,7 +29,7 @@ function App() {
       <Header />
 
       {/* Main Content (grows to fill space) */}
-      <main className="flex-1">
+      <main className="flex-1 px-2.5">
         <Outlet />
       </main>
 

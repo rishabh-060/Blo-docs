@@ -24,11 +24,11 @@ const Header = () => {
       slug: '/signup',
       active: !authStatus
     },
-    {
-      name: 'My Posts',
-      slug: '/all-posts',
-      active: authStatus
-    },
+    // {
+    //   name: 'My Posts',
+    //   slug: '/all-posts',
+    //   active: authStatus
+    // },
     {
       name: 'Add Post',
       slug: '/add-post',

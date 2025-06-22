@@ -24,9 +24,9 @@ const PostForm = ({post}) => {
   const submit = async (data) => {
     setLoading(true)
     try {
+      console.log('first', data)
       let file = null;
       if (data.featuredImage && data.featuredImage[0]) {
-        // console.log(data.featuredImage)
         file = await appwriteService.uploadFile(data.featuredImage[0]);
       }
       // if we have post mean that we are editing the existing post
@@ -80,11 +80,11 @@ const PostForm = ({post}) => {
     return () => {
       Subsciption.unsubscribe()
     }
-  },[watch, slugTransform, setValue])
+  },[watch, slugTransform, setValue, navigate])
 
   return (
-    <form onSubmit={handleSubmit(submit)} className='flex flex-wrap'>
-      <div className='w-2/3 px-2'>
+    <form onSubmit={handleSubmit(submit)} className='flex flex-wrap flex-col md:flex-row py-2.5'>
+      <div className='w-full md:w-2/3 px-2'>
         <RTE
           label='Blog content'
           name='content'
@@ -93,7 +93,7 @@ const PostForm = ({post}) => {
         />
       </div>
 
-      <div className='w-1/3 pl-4'>
+      <div className='w-full md:w-1/3 pl-4'>
           <Input
             label='Title: '
             placeholder='Blog-Title'

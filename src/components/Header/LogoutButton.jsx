@@ -3,16 +3,19 @@ import { useDispatch } from 'react-redux'
 import authService from '../../appwrite/auth'
 import { logout } from '../../store/authSlice'
 import notify from '../../utils/alert'
+import { useNavigate } from 'react-router-dom'
 
 const LogoutButton = () => {
   const dispatch = useDispatch()
   const [loading, setLoading] = React.useState(false)
+  const navigate = useNavigate()
 
   const logoutHandler = () => {
     setLoading(true)
     authService.logout()
     .then(() => {
         dispatch(logout())
+        navigate('/')
         notify.success('Logout successfully')
     })
     setLoading(false)
