@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux'
 
 const AllPosts = () => {
   const [posts, setPosts] = React.useState([])
-  const userData = useSelector(state => state.userData)
+  const userData = useSelector(state => state.auth.userData)
 
   React.useEffect(() => {
     appwriteService.getPosts(userData)
