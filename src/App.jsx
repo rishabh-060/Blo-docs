@@ -24,7 +24,7 @@ function App() {
   }, [])
 
   return !loading ? (
-    <div className="min-h-screen flex flex-col bg-purple-200">
+    <div className="min-h-screen flex flex-col overflow-y-auto">
       {/* Header */}
       <Header />
 

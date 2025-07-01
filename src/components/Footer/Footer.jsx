@@ -60,7 +60,7 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-fuchsia-800 mt-4 pt-4 text-center text-sm text-fuchsia-300">
+        <div className="border-t border-fuchsia-800 mt-4 py-4 text-center text-sm text-fuchsia-300">
           <p>
             © {new Date().getFullYear()} All rights reserved. Made with{' '}
             <span className="text-amber-500">❤️</span> by{' '}

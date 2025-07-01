@@ -40,7 +40,7 @@ const Home = () => {
   }
 
   return (
-    <div className="w-full py-10">
+    <div className="w-full pt-10 pb-4">
       <Container>
         <div className="grid grid-cols-2 px-3 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-5 gap-3 md:gap-4">
           {posts.map((post) => (
